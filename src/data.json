@@ -1,0 +1,1009 @@
+{
+	"bio": {
+		"name": "Danielle Bastien",
+		"nickname": "dmlb",
+		"pronouns": "they / them",
+		"title": "Front-End Web Developer • Accessibility Technical Lead",
+		"location": "Calgary",
+		"landAcknowledgement": {
+			"location": "Moh'kinsstis, where the Bow River meets the Elbow River",
+			"people": "Traditional territories of the Niitsitapi (Blackfoot) and the people of Treaty 7 which includes the Siksika, the Piikani, the Kainai, the Tsuut'ina and the Îyârhe Nakoda of Bearspaw, Chiniki and Goodstoney. Which is also home to the Métis Nation, Region 3"
+		},
+		"hideResume": false,
+		"resumePdfUrl": "https://daniellemlbastien.com/DanielleBastien-Resume-2024.pdf",
+		"startYear": 2005,
+		"professionalStartYear": 2013,
+		"charlimit": "Danielle Bastien, is a dedicated and passionate Front-End Web Developer in Calgary who is committed to delivering accessible and usable experiences to users across all devices and interfaces. Their focus is always on developing interfaces, tooling and processes that are scalable and accessible to all.",
+		"oneliner": "<span itemprop='jobTitle'>Technical Lead, Front-End Web Developer</span> in <span itemprop='workLocation'>Calgary</span> currently working with <a itemprop='worksFor' href='https://approachci.com/'>Approach Controls</a>",
+		"emojiliner": "💬 🖥 🛠",
+		"workbio": "<p><span itemprop='givenName'>Danielle</span> is a subject-matter expert front-end web developer working to bring accessible and usable experiences to users in the browser on any given device with any tool or interfacing method that enables access and inclusion.</p><p>Danielle's expertise includes project estimation and organization, design analysis, interpretation and architectural planning through an accessible and scalability lens and the development and implementation of interfaces, tooling and processes to enable the software development lifecycle. Danielle enjoys exploring new ideas, prototyping and iterating solutions and writing technical documentation. Danielle's colleagues would describe them as an attentive to detail, disciplined, organized, and resourceful individual who leads with curiosity.</p><p>Currently, Danielle is seeking opportunities that will allow them to develop and promote technologies that are accessible and inclusive.</p>",
+		"values": [
+			"Accessibility",
+			"User Experience",
+			"Quality",
+			"Direct Communication",
+			"Integrity",
+			"Balance",
+			"Curiosity"
+		]
+	},
+	"discord": {
+		"name": "a11y Tech Network",
+		"plug": "<p>I've met many people and had many great conversations about Web Accessibility. It warmed my heart to meet so many who were interested in learning more, but also many who have already started their educational path and are craving more!</p><p>I've offered many of you to DM me anytime with your Web Accessibility questions, but I also know reaching out can be daunting, and people might feel bad requesting others' time. To reduce that barrier to entry, I've created a Discord server <q>a11y Tech Network</q>, in an attempt to create an informal, low-pressure space where we can all learn from each other.</p><p>If you've got Web Accessibility questions, drop them in the forums!</p>",
+		"alt": "Discord logo over, dark blobs of green, blue, and purple with A11y Tech Network written in OpenDyslexic font",
+		"link": "https://discord.gg/knEJUTHshs"
+	},
+	"photography": {
+		"title": "Danielle's Photography",
+		"plug": "Step into the world of nature and wildlife with me on Instagram! Join me on a visual adventure and discover the wonders of the natural world through my lens.",
+		"links": {
+			"store": "https://shop.daniellemlbastien.com",
+			"book": "https://bird-photos.daniellemlbastien.com",
+			"instagram": "https://www.instagram.com/dmlb.s0/"
+		}
+	},
+	"profSocials": [
+		{
+			"site": "linkedin",
+			"link": "https://www.linkedin.com/in/daniellemlbastien"
+		},
+		{
+			"site": "codepen",
+			"link": "https://codepen.io/dmlb"
+		},
+		{
+			"site": "github",
+			"link": "https://github.com/dmlb"
+		}
+	],
+	"skillIcons": [
+		"html5",
+		"accessibility",
+		"css3",
+		"sass",
+		"less",
+		"css-modules",
+		"autoprefixer",
+		"postcss",
+		"stylus",
+		"bem",
+		"tailwind-css",
+		"bootstrap",
+		"material-design",
+		"storybook",
+		"javascript",
+		"typescript",
+		"pwa",
+		"angular",
+		"reactivex",
+		"ngrx",
+		"svelte",
+		"gatsby",
+		"react",
+		"jquery",
+		"handlebars-dot-js",
+		"json",
+		"json-web-tokens",
+		"greensock",
+		"lodash",
+		"amp",
+		"google-ads",
+		"google-analytics",
+		"mixpanel",
+		"hotjar",
+		"google-tag-manager",
+		"google-fonts",
+		"google-maps",
+		"speed-test",
+		"lighthouse",
+		"jasmine",
+		"jest",
+		"vitest",
+		"testing-library",
+		"cypress",
+		"puppeteer",
+		"mocha",
+		"babel",
+		"webpack",
+		"vite",
+		"graphql",
+		"python",
+		"php",
+		"django",
+		"contentful",
+		"wordpress",
+		"mqtt",
+		"node-dot-js",
+		"express",
+		"nest-js",
+		"postman",
+		"mongodb",
+		"mysql",
+		"postgresql",
+		"elastic-search",
+		"docker",
+		"mamp",
+		"apache",
+		"nginx",
+		"amazon-s3",
+		"git",
+		"github",
+		"github-pages",
+		"bitbucket",
+		"gitlab",
+		"jenkins",
+		"yaml",
+		"gulp",
+		"grunt",
+		"markdown",
+		"nano",
+		"npm",
+		"yarn",
+		"editorconfig",
+		"eslint",
+		"prettier",
+		"stylelint",
+		"precommit",
+		"filezilla",
+		"google-chrome",
+		"firefox",
+		"safari",
+		"opera",
+		"xcode",
+		"adobe",
+		"figma",
+		"adobe-lightroom",
+		"adobe-lightroom-classic",
+		"adobe-photoshop",
+		"adobe-premierepro",
+		"adobe-after-effects",
+		"adobe-illustrator",
+		"adobe-audition",
+		"canva",
+		"visual-studio-code",
+		"atom",
+		"slack",
+		"jira",
+		"confluence",
+		"notion",
+		"mural",
+		"youtube-studio",
+		"giphy"
+	],
+	"codeSamples": [
+		{
+			"title": "Postmedia Design System",
+			"link": "https://youtu.be/Hw0S44-HZzw",
+			"type": "video",
+			"techStack": [
+				"accessibility",
+				"html5",
+				"css3",
+				"sass",
+				"javascript",
+				"typescript",
+				"python",
+				"django",
+				"webpack",
+				"google-fonts"
+			]
+		},
+		{
+			"title": "411 Styleguide",
+			"link": "https://youtu.be/w9AQpgJY-TE",
+			"type": "video",
+			"techStack": [
+				"accessibility",
+				"html5",
+				"css3",
+				"sass",
+				"bootstrap",
+				"javascript",
+				"typescript",
+				"angular",
+				"google-fonts"
+			]
+		},
+		{
+			"title": "Climate Town Knowledge Hub",
+			"link": "https://hub.climatetownproductions.com/",
+			"type": "site",
+			"techStack": [
+				"accessibility",
+				"html5",
+				"css3",
+				"tailwind-css",
+				"javascript",
+				"typescript",
+				"svelte",
+				"mixpanel"
+			]
+		},
+		{
+			"title": "Bird Photography",
+			"link": "https://bird-photos.daniellemlbastien.com/",
+			"type": "web-app",
+			"techStack": [
+				"accessibility",
+				"html5",
+				"css3",
+				"javascript",
+				"typescript",
+				"react",
+				"gatsby",
+				"pwa",
+				"contentful",
+				"google-fonts",
+				"google-analytics"
+			]
+		},
+		{
+			"title": "Danielle's Cooking Recipes",
+			"link": "https://cooking.daniellemlbastien.com/",
+			"type": "web-app",
+			"techStack": [
+				"accessibility",
+				"html5",
+				"css3",
+				"javascript",
+				"typescript",
+				"react",
+				"gatsby",
+				"styled-components",
+				"pwa",
+				"contentful",
+				"google-fonts"
+			]
+		},
+		{
+			"title": "Router Transitions",
+			"link": "https://personality.daniellemlbastien.com/",
+			"type": "site",
+			"techStack": ["css3", "javascript", "vue-dot-js"]
+		},
+		{
+			"title": "21 Days of Resilience Router Subscriptions",
+			"link": "https://resilience.daniellemlbastien.com/",
+			"type": "site",
+			"techStack": [
+				"css3",
+				"javascript",
+				"typescript",
+				"angular",
+				"reactivex",
+				"pwa",
+				"google-fonts"
+			]
+		},
+		{
+			"title": "Covid Care: Pandemic Safety Communication Tool",
+			"link": "https://covidcare.daniellemlbastien.com/",
+			"type": "site",
+			"techStack": ["html5", "material-design", "javascript", "typescript", "angular"]
+		},
+		{
+			"title": "Spotify Playlist Switcher",
+			"link": "https://playlists.daniellemlbastien.com/",
+			"type": "site",
+			"techStack": ["html5", "css3", "javascript", "react", "google-fonts"]
+		},
+		{
+			"title": "Web API Notifications",
+			"link": "https://notification.daniellemlbastien.com/",
+			"type": "site",
+			"techStack": ["html5", "javascript"]
+		},
+		{
+			"title": "Canvas Particles Valentine Playlist",
+			"link": "https://yourvalentine.daniellemlbastien.com",
+			"type": "site",
+			"techStack": ["html5", "css3", "javascript", "jquery", "google-fonts"]
+		},
+		{
+			"title": "Alice in CSS Zen Garden",
+			"link": "https://zen.daniellemlbastien.com",
+			"type": "site",
+			"techStack": ["css3"]
+		},
+		{
+			"title": "Border Gradient",
+			"link": "https://codepen.io/dmlb/pen/PpVNdr",
+			"type": "pen",
+			"techStack": ["css3", "sass"]
+		},
+		{
+			"title": "Grid Pull Quote",
+			"link": "https://codepen.io/dmlb/pen/bzbPpG",
+			"type": "pen",
+			"techStack": ["css3", "sass"]
+		},
+		{
+			"title": "Grid Layering Elements",
+			"link": "https://codepen.io/dmlb/pen/rqwdrN",
+			"type": "pen",
+			"techStack": ["css3", "sass"]
+		},
+		{
+			"title": "Border Layer Illusion",
+			"link": "https://codepen.io/dmlb/pen/GXddpy",
+			"type": "pen",
+			"techStack": ["css3", "sass"]
+		},
+		{
+			"title": "Horizontal Split Screen",
+			"link": "https://codepen.io/dmlb/pen/WpXXYy",
+			"type": "pen",
+			"techStack": ["css3", "sass"]
+		},
+		{
+			"title": "Vertical Split Screen",
+			"link": "https://codepen.io/dmlb/pen/YVLrzv",
+			"type": "pen",
+			"techStack": ["css3", "sass"]
+		},
+		{
+			"title": "Grid Layout with Gaps",
+			"link": "https://codepen.io/dmlb/pen/gWzxWe",
+			"type": "pen",
+			"techStack": ["css3", "sass"]
+		},
+		{
+			"title": "Grid Layout",
+			"link": "https://codepen.io/dmlb/pen/WjJOXX",
+			"type": "pen",
+			"techStack": ["css3", "sass"]
+		},
+		{
+			"title": "Footer Form",
+			"link": "https://codepen.io/dmlb/pen/OmYQYJ",
+			"type": "pen",
+			"techStack": ["html5", "css3", "sass"]
+		},
+		{
+			"title": "Multiple Background Blending",
+			"link": "https://codepen.io/dmlb/pen/BWvgYp",
+			"type": "pen",
+			"techStack": ["css3", "sass"]
+		},
+		{
+			"title": "Backdrop Filter",
+			"link": "https://codepen.io/dmlb/pen/wJNXXV",
+			"type": "pen",
+			"techStack": ["css3", "sass"]
+		},
+		{
+			"title": "Header Shapes",
+			"link": "https://codepen.io/dmlb/pen/LjGMpd",
+			"type": "pen",
+			"techStack": ["css3", "sass"]
+		},
+		{
+			"title": "Photo Cards",
+			"link": "https://codepen.io/dmlb/pen/vxpNpL",
+			"type": "pen",
+			"techStack": ["css3", "sass"]
+		},
+		{
+			"title": "Rainbow Border Cards",
+			"link": "https://codepen.io/dmlb/pen/aWYzNB",
+			"type": "pen",
+			"techStack": ["css3", "sass"]
+		},
+		{
+			"title": "Grid Newspaper Layout",
+			"link": "https://codepen.io/dmlb/pen/yLzVBxm",
+			"type": "pen",
+			"techStack": ["css3", "sass"]
+		},
+		{
+			"title": "Animation Timeline Progress Scrolling",
+			"link": "https://codepen.io/dmlb/pen/KKQMzJg",
+			"type": "pen",
+			"techStack": ["css3", "sass", "javascript"]
+		}
+	],
+	"techWork": [
+		{
+			"position": "Lead Front-End Developer",
+			"startYear": "2022",
+			"endYear": "Current",
+			"company": "Approach Controls Inc",
+			"url": "https://www.postmedia.com/",
+			"methodology": "Agile Development",
+			"location": "Hybrid Remote",
+			"techStack": [
+				"accessibility",
+				"html5",
+				"css3",
+				"sass",
+				"bem",
+				"material-design",
+				"javascript",
+				"typescript",
+				"angular",
+				"reactivex",
+				"ngrx",
+				"lodash",
+				"react",
+				"storybook",
+				"google-fonts",
+				"json",
+				"json-web-tokens",
+				"jasmine",
+				"jest",
+				"chai",
+				"testing-library",
+				"puppeteer",
+				"vite",
+				"webpack",
+				"node-dot-js",
+				"express",
+				"nest-js",
+				"swagger",
+				"mqtt",
+				"postgresql",
+				"python",
+				"git",
+				"bitbucket",
+				"github-copilot",
+				"jenkins",
+				"nx",
+				"npm",
+				"yarn",
+				"markdown",
+				"precommit",
+				"editorconfig",
+				"eslint",
+				"prettier",
+				"stylelint",
+				"visual-studio-code",
+				"figma",
+				"jira",
+				"confluence",
+				"google-forms",
+				"google-sheets",
+				"google-slides",
+				"google-docs",
+				"slack"
+			]
+		},
+		{
+			"position": "Lead Front-End Web Developer",
+			"startYear": "2019",
+			"endYear": "2022",
+			"company": "Postmedia Network Inc.",
+			"url": "https://approachci.com/",
+			"methodology": "Agile Development",
+			"location": "Remote",
+			"techStack": [
+				"accessibility",
+				"html5",
+				"css3",
+				"sass",
+				"bem",
+				"autoprefixer",
+				"postcss",
+				"javascript",
+				"typescript",
+				"react",
+				"json",
+				"json-web-tokens",
+				"babel",
+				"webpack",
+				"jest",
+				"python",
+				"django",
+				"postgresql",
+				"mongodb",
+				"postman",
+				"xcode",
+				"amp",
+				"google-fonts",
+				"google-ads",
+				"google-analytics",
+				"google-tag-manager",
+				"git",
+				"github",
+				"jenkins",
+				"gulp",
+				"npm",
+				"markdown",
+				"yaml",
+				"docker",
+				"kubernetes",
+				"lighthouse",
+				"speed-test",
+				"precommit",
+				"editorconfig",
+				"eslint",
+				"prettier",
+				"stylelint",
+				"visual-studio-code",
+				"sketch",
+				"figma",
+				"mural",
+				"jira",
+				"confluence",
+				"youtube-studio",
+				"google-forms",
+				"google-sheets",
+				"google-slides",
+				"google-docs",
+				"slack"
+			]
+		},
+		{
+			"position": "Front-End Web Developer",
+			"startYear": "2015",
+			"endYear": "2019",
+			"company": "411 Local Search Corp.",
+			"url": "https://411.ca",
+			"methodology": "Agile Development",
+			"location": "Hybrid Remote",
+			"techStack": [
+				"accessibility",
+				"html5",
+				"css3",
+				"sass",
+				"bootstrap",
+				"autoprefixer",
+				"material-design",
+				"javascript",
+				"typescript",
+				"angular",
+				"reactivex",
+				"ngrx",
+				"express",
+				"json",
+				"jasmine",
+				"php",
+				"mysql",
+				"mongodb",
+				"elastic-search",
+				"nginx",
+				"postman",
+				"xcode",
+				"google-maps",
+				"google-ads",
+				"google-analytics",
+				"google-tag-manager",
+				"git",
+				"gitlab",
+				"github",
+				"jenkins",
+				"grunt",
+				"gulp",
+				"npm",
+				"markdown",
+				"lighthouse",
+				"speed-test",
+				"atom",
+				"adobe-photoshop",
+				"adobe-illustrator",
+				"adobe-after-effects",
+				"adobe-lightroom",
+				"google-forms",
+				"google-sheets",
+				"google-slides",
+				"google-docs",
+				"slack"
+			]
+		},
+		{
+			"position": "Web Developer",
+			"startYear": "2013",
+			"endYear": "2015",
+			"company": "Site Technologies Inc.",
+			"url": "https://veloxsites.com",
+			"methodology": "Agile Development",
+			"location": "On Site",
+			"techStack": [
+				"html5",
+				"css3",
+				"less",
+				"bootstrap",
+				"javascript",
+				"jquery",
+				"json",
+				"php",
+				"mysql",
+				"wordpress",
+				"google-analytics",
+				"npm",
+				"markdown",
+				"git",
+				"gitlab",
+				"adobe-photoshop",
+				"adobe-illustrator",
+				"adobe-after-effects"
+			]
+		}
+	],
+	"otherWork": [
+		{
+			"position": "Peer Tutor",
+			"startYear": "2010",
+			"endYear": "2013",
+			"company": "Humber College",
+			"url": "https://humber.ca/learningresources/peer-tutoring"
+		},
+		{
+			"position": "Video Editor",
+			"startYear": "2010",
+			"endYear": "2012",
+			"company": "Windsor Historical Society",
+			"url": "https://www.veteransmemoriesproject.com"
+		},
+		{
+			"position": "Post Coordinator Intern",
+			"startYear": "2011",
+			"endYear": "2011",
+			"company": "Cineflix",
+			"url": "https://www.cineflix.com"
+		},
+		{
+			"position": "Supervisor",
+			"startYear": "2007",
+			"endYear": "2009",
+			"company": "The House Youth Center",
+			"url": "https://www.canadahelps.org/en/charities/thehouseyouthcentre/"
+		}
+	],
+	"filmCredits": [
+		{
+			"year": "2012",
+			"role": "Cinematographer, Picture Editor & Director",
+			"title": "Veterans Memory Project",
+			"duration": "77 min",
+			"format": "HD",
+			"genre": "Documentary",
+			"director": "Danielle Bastien",
+			"tagline": "Educational Feature Documentary",
+			"synopsis": "A group of veterans who range from WWII to Afghanistan retell their personal experiences in hopes that their stories can touch Canada's next generations.",
+			"url": false,
+			"trailer": false,
+			"festival": false
+		},
+		{
+			"year": "2012",
+			"role": "Assistant Picture Editor",
+			"title": "Travel Bhutan",
+			"duration": "Short",
+			"format": "HD, SD",
+			"genre": "Documentary",
+			"director": "Eva Ziemsen",
+			"tagline": false,
+			"synopsis": false,
+			"url": false,
+			"trailer": false,
+			"festival": false
+		},
+		{
+			"year": "2012",
+			"role": "Picture Editor & Script Supervisor",
+			"title": "Border Line",
+			"duration": "9 min",
+			"format": "HD",
+			"genre": "Drama",
+			"director": "Maria Alejandra Morales",
+			"tagline": "Every Crossing Doesn't Guarantee Happiness",
+			"synopsis": "<span imtemprop='character'>Dalgo</span> and <span imtemprop='character'>Tristan</span> are two USA border patrol officers on a routine inspection out in the Arizona Desert. Their day starts out like any other until they come across Raul, a desperate man in a desperate situation. This forces Dalgo to come face to face with the heritage that he’s always run away from.",
+			"url": "https://borderlineshort.wix.com/info",
+			"trailer": false,
+			"festival": "Official MAD Selection"
+		},
+		{
+			"year": "2012",
+			"role": "Picture Editor",
+			"title": "Grief. Behind the Tableaux",
+			"duration": "8 min",
+			"format": "HD",
+			"genre": "Documentary",
+			"director": "Eva Ziemsen",
+			"tagline": "Behind the Scenes Documentary",
+			"synopsis": "Grief behind the scenes brings the audience in to look at what it takes to create a film and the various positions held on a film set.",
+			"url": false,
+			"trailer": false,
+			"festival": false
+		},
+		{
+			"year": "2012",
+			"role": "Script Supervisor",
+			"title": "Grief. Story of a Mime in Seven Tableaux",
+			"duration": "Short",
+			"format": "35mm",
+			"genre": "Drama",
+			"director": "Abraham Bankole, Kyle Carruthers, Jesse Herzog & Jesse Powell",
+			"tagline": false,
+			"synopsis": false,
+			"url": false,
+			"trailer": false,
+			"festival": false
+		},
+		{
+			"year": "2012",
+			"role": "Dialogue Editor",
+			"title": "Astronomy Girl",
+			"duration": "Short",
+			"format": "HD",
+			"genre": "Drama",
+			"director": "Robyn Watkins",
+			"tagline": false,
+			"synopsis": false,
+			"url": false,
+			"trailer": false,
+			"festival": false
+		},
+		{
+			"year": "2012",
+			"role": "Visual Effects Artist",
+			"title": "Calvin Klein",
+			"duration": "30 sec",
+			"format": "HD",
+			"genre": "Spec Commercial",
+			"director": "John Harden",
+			"tagline": false,
+			"synopsis": false,
+			"url": false,
+			"trailer": false,
+			"festival": false
+		},
+		{
+			"year": "2012",
+			"role": "Script Supervisor",
+			"title": "Jadon's Change",
+			"duration": "Short",
+			"format": "Super 16mm",
+			"genre": "Drama",
+			"director": "Abraham Bankole",
+			"tagline": false,
+			"synopsis": false,
+			"url": false,
+			"trailer": false,
+			"festival": false
+		},
+		{
+			"year": "2011",
+			"role": "Picture Editor & Visual Effects Assistant",
+			"title": "Teresa's Tummy",
+			"duration": "7 min",
+			"format": "Super 16mm",
+			"genre": "Drama",
+			"director": "Yosef Baraki",
+			"tagline": "I wanted to tell you about a dream I had.",
+			"synopsis": "A young girl with stomach cancer creates a fantasy world to which she escapes to with her best friends when her condition takes a turn for the worst.",
+			"url": "https://teresa.daniellemlbastien.com/",
+			"trailer": "https://vimeo.com/60001692",
+			"festival": false
+		},
+		{
+			"year": "2011",
+			"role": "Script Supervisor",
+			"title": "Foreign Exchange",
+			"duration": "Short",
+			"format": "Super 16mm",
+			"genre": "Family",
+			"director": "Matthew Ieraci",
+			"tagline": false,
+			"synopsis": false,
+			"url": false,
+			"trailer": false,
+			"festival": false
+		},
+		{
+			"year": "2011",
+			"role": "Script Supervisor",
+			"title": "Honda Civic",
+			"duration": "30 sec",
+			"format": "HD",
+			"genre": "Spec Commercial",
+			"director": "Dan Whidden",
+			"tagline": false,
+			"synopsis": false,
+			"url": false,
+			"trailer": false,
+			"festival": false
+		},
+		{
+			"year": "2011",
+			"role": "Location Sound Recordist",
+			"title": "Team Canada Hockey",
+			"duration": "30 sec",
+			"format": false,
+			"genre": "Spec Commercial",
+			"director": "Lucas Dabrowski",
+			"tagline": false,
+			"synopsis": false,
+			"url": false,
+			"trailer": false,
+			"festival": false
+		},
+		{
+			"year": "2010",
+			"role": "Location Sound Recordist & Visual Effects Artist",
+			"title": "Dive and Diminution: A Punk Story",
+			"duration": "Short",
+			"format": "HD",
+			"genre": "Documentary",
+			"director": "Kyle McGuire",
+			"tagline": false,
+			"synopsis": false,
+			"url": false,
+			"trailer": false,
+			"festival": "Official NXNE selection"
+		}
+	],
+	"education": [
+		{
+			"year": "2013",
+			"program": "Web Design, Development and Maintenance",
+			"institution": "Humber College Institute of Technology and Advanced Learning",
+			"degree": "Certificate",
+			"honours": false,
+			"major": false
+		},
+		{
+			"year": "2012",
+			"program": "Film and Television Production",
+			"institution": "Humber College Institute of Technology and Advanced Learning",
+			"degree": "Advanced Diploma",
+			"honours": true,
+			"major": "Specializing in post picture, post sound, and visual effects."
+		}
+	],
+	"profDevelopment": [
+		{
+			"year": "2024",
+			"course": "Angular - The Complete Guide (2024 Edition)",
+			"techStack": ["angular"]
+		},
+		{
+			"year": "2023",
+			"course": "NG Conf Free Stream",
+			"techStack": ["angular", "ngrx", "nx", "pwa", "javascript"]
+		},
+		{
+			"year": "2021",
+			"course": "Front End Masters: JavaScript The Hard Parts v2",
+			"techStack": ["javascript"]
+		},
+		{
+			"year": "2021",
+			"course": "Workshop: Dynamic CSS with Custom Properties",
+			"techStack": ["css3", "javascript"]
+		},
+		{
+			"year": "2020",
+			"course": "OpenJS Stream",
+			"techStack": ["javascript"]
+		},
+		{
+			"year": "2019",
+			"course": "NG Conf Free Stream",
+			"techStack": ["angular", "ngrx", "pwa", "javascript"]
+		},
+		{
+			"year": "2018",
+			"course": "Editing Fiction and Memoir by Maggie Morris",
+			"techStack": []
+		},
+		{
+			"year": "2018",
+			"course": "Micro Frontends: The Key to Scaling Single Page Applications Webinar Rangle.io",
+			"techStack": ["pwa", "javascript"]
+		},
+		{
+			"year": "2017",
+			"course": "Google mSite Hackathon",
+			"techStack": ["html5", "css3", "javascript", "angular", "pwa"]
+		},
+		{
+			"year": "2011",
+			"course": "Picture Editors on Editing Symposium by <abbr title='Canadian Film Center'>CFC</abbr>",
+			"techStack": []
+		},
+		{
+			"year": "2011",
+			"course": "Script Supervisor Workshop by Dug Rotstein",
+			"techStack": []
+		}
+	],
+	"endorsements": [
+		{
+			"quote": "I get the chance to write to you, to praise you, to commend you, to update you and to thank you. We were fortunate, we were blessed and we were so grateful to you for making everything so easy for us.",
+			"person": "Dann Bouzide",
+			"position": "Coordinator",
+			"company": "Windsor Historical Society"
+		},
+		{
+			"quote": "I just looked at some of your logs. Great work! I'm impressed.",
+			"person": "Eva Ziemsen",
+			"position": "Director",
+			"company": "Travel Bhutan Documentary"
+		},
+		{
+			"quote": "Danielle is always willing to roll up their sleeves and put in the long hours, graciously allowing others to share the credit. They are also a very positive creative force. They are flexible and open with cast, crew and faculty, and reacts well to constructive criticism.",
+			"person": "Robb Wright",
+			"position": "Post Production Professor",
+			"company": "Humber College"
+		},
+		{
+			"quote": "Danielle is quiet but very diligent working. I have worked with them on several projects and they has proven themself to be very dependable detailed oriented in the work they do.",
+			"person": "Jeffrey Richardson",
+			"position": "Producer",
+			"company": "Border Line Short Film"
+		},
+		{
+			"quote": "…I was extremely impressed to see how quickly they managed to navigate through the product environment, technologies and became a part of a team to deliver a challenging release…",
+			"person": "Indra Dosanjh",
+			"position": "VP Product Development",
+			"company": "Veloxsites"
+		},
+		{
+			"quote": "…first to take the lead the go-getter of the squad.  Danielle is analytical and always takes initiative…",
+			"person": "Anastasia Ribeiro",
+			"position": "Marketing Communications Coordinator",
+			"company": "411.ca"
+		},
+		{
+			"quote": "…Danielle was one of the team’s best assets: they would flawlessly complete their own dev work, take time to mentor more junior developers, and offer their skills for side projects for internal initiatives like corporate videos and events…",
+			"person": "Care Fader",
+			"position": "Product & Brand Marketing Manager",
+			"company": "411.ca"
+		},
+		{
+			"quote": "…Danielle is an excellent resource in regards to web based knowledge, they were able to answer any questions I had regarding mutual projects or if I just had a random question while they were doing a million other tasks, great patience…",
+			"person": "Ian Milligan",
+			"position": "Graphics & Web Designer",
+			"company": "411.ca"
+		},
+		{
+			"quote": "…Danielle is a very well rounded and knowledgeable team player, who not only strives towards achieving their performance goals, but actively delivers towards the team’s performance benchmarks as well…",
+			"person": "Iuri Strelet",
+			"position": "Front-End Developer",
+			"company": "411.ca"
+		},
+		{
+			"quote": "…It was easy to innovate with them for UI & UX design issues we had regarding the company website redesign…",
+			"person": "Lisa Macklem",
+			"position": "Graphics & Web Designer",
+			"company": "411.ca"
+		},
+		{
+			"quote": "…always ready and keen to learn new things. we created new website from scratch using Angular JS, and they did lots of hard work and deliver quality product to the company. My favourite thing is they are always updated with new technologies…",
+			"person": "Mandeep Singh",
+			"position": "Quality Assurance Specialist",
+			"company": "411.ca"
+		},
+		{
+			"quote": "…They're always studying the latest trends in media and never hesitates to share their knowledge with the team. Their spark and curiosity I've always admired…",
+			"person": "Tevin Castle",
+			"position": "Graphics & Web Designer",
+			"company": "411.ca"
+		},
+		{
+			"quote": "…you are one of the shining starts of the engineering team, you have a bright future ahead of you. if you get the chance to work with a high performing group you're going to love it…",
+			"person": "Fraser Reed",
+			"position": "Development Manager",
+			"company": "Postmedia"
+		},
+		{
+			"quote": "…you've got many requests because you're proving every day that you are a great developer, people know that you are reliable…",
+			"person": "Andre Collin",
+			"position": "Development Manager",
+			"company": "Postmedia"
+		},
+		{
+			"quote": "…you are professional, have attention to detail, I like your compentenses and your presentation of arguments…",
+			"person": "Vincent Groux",
+			"position": "Director of Engineering",
+			"company": "Postmedia"
+		},
+		{
+			"quote": "…you are a stealthy leader, role model, knowledgeable; you are a person of few words but they are important and impactful…",
+			"person": "Melissa Verheyden",
+			"position": "Senior Director of Product - News and Information",
+			"company": "Postmedia"
+		}
+	]
+}
