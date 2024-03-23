@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
+
 	import { page } from '$app/stores';
 	import { fade } from 'svelte/transition';
 
@@ -7,9 +9,15 @@
 
 	const { photography, bio, discord } = $page.data.portfolio;
 
-	let load: boolean = false;
-	// TODO: hook animation:end bg-image scale-down
-	setTimeout(() => (load = true), 600);
+	let bgImg: HTMLDivElement | undefined;
+	let loadCards: boolean = false;
+	onMount(() => {
+		bgImg?.addEventListener('animationend', (event) => {
+			if(event.animationName === 'scale-down') {
+				loadCards = true;
+			}
+		})
+	})
 </script>
 
 <svelte:head>
@@ -18,11 +26,11 @@
 	<link rel="preload" href="images/bg/black-swallowtail.avif" as="image" type="image/avif" />
 </svelte:head>
 
-<div class="bg-image"></div>
+<div bind:this={bgImg} class="bg-image"></div>
 
 <div class="card-wrapper">
-	{#if load}
-		<article transition:fade={{ delay: 350, duration: 200 }} class="card">
+	{#if loadCards}
+		<article transition:fade={{ delay: 250, duration: 200 }} class="card">
 			<h3 class="card__header">Danielle's Work {bio.emojiliner}</h3>
 			<p class="card__content">{bio.charlimit}</p>
 			<div class="card__actions card__actions--center">
@@ -33,7 +41,7 @@
 			</div>
 		</article>
 
-		<article transition:fade={{ delay: 750, duration: 200 }} class="card">
+		<article transition:fade={{ delay: 450, duration: 200 }} class="card">
 			<h3 class="card__header">{discord.name}</h3>
 			<div class="card__content">
 				<picture>
@@ -57,7 +65,7 @@
 			</div>
 		</article>
 
-		<article transition:fade={{ delay: 550, duration: 200 }} class="card">
+		<article transition:fade={{ delay: 650, duration: 200 }} class="card">
 			<h3 class="card__header">{photography.title}</h3>
 			<p class="card__content">{photography.plug}</p>
 			<div class="card__actions">
@@ -68,7 +76,7 @@
 			</div>
 		</article>
 
-		<article transition:fade={{ delay: 750, duration: 200 }} class="card">
+		<article transition:fade={{ delay: 850, duration: 200 }} class="card">
 			<h3 class="card__header">Land Acknowledgement</h3>
 			<p class="card__content">{bio.landAcknowledgement.location}</p>
 			<p class="card__content">{bio.landAcknowledgement.people}</p>
@@ -109,7 +117,7 @@
 			url('$lib/images/bg/black-swallowtail.jpg') type('image/jpeg')
 		);
 		transform: scale(1.6);
-		animation: 500ms cubic-bezier(0.4, 0, 1, 1) 200ms forwards scale-down;
+		animation: 300ms cubic-bezier(0.4, 0, 1, 1) 150ms forwards scale-down;
 
 		&::before {
 			content: '';
@@ -120,7 +128,7 @@
 			width: 100%;
 			background-color: rgba(0, 0, 0, 0.65);
 			opacity: 0;
-			animation: 600ms cubic-bezier(0.4, 0, 1, 1) 400ms 1 forwards fade;
+			animation: 400ms cubic-bezier(0.4, 0, 1, 1) 400ms 1 forwards fade;
 		}
 	}
 
