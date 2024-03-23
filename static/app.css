@@ -1,12 +1,14 @@
 /* keyframes */
-@keyframes fade-in {
+@keyframes blur-fade-in {
 	from {
+		filter: blur(20px);
 		opacity: 0;
 	}
 }
 
-@keyframes fade-out {
+@keyframes blur-fade-out {
 	to {
+		filter: blur(20px);
 		opacity: 0;
 	}
 }
@@ -45,33 +47,20 @@
 	}
 }
 
-@keyframes unblur {
-	to {
-		filter: blur(0);
-	}
-}
-
-@keyframes blur {
-	to {
-		filter: blur(2rem);
-	}
-}
-
 ::view-transition-old(root) {
 	animation:
-		90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+		190ms cubic-bezier(0.4, 0, 1, 1) both blur-fade-out,
 		300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
 }
 
 ::view-transition-new(root) {
 	animation:
-		210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
+		210ms cubic-bezier(0, 0, 0.2, 1) 90ms both blur-fade-in,
 		300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
 }
 
 /* remove animations */
 @media (prefers-reduced-motion) {
-
 	*,
 	::view-transition-group(*),
 	::view-transition-old(*),
@@ -123,8 +112,6 @@
 	--radi: 10px;
 	--radi-m: 20px;
 	--radi-l: 50px;
-
-	--font: 'Source Sans Pro', sans-serif;
 
 	--letter-space-s: 0.025rem;
 	--letter-space: 0.05rem;
@@ -249,22 +236,7 @@ main {
 	padding-right: var(--spacer);
 }
 
-.home {
-	& header {
-		background-color: hsla(var(--clr-black-hue),
-				var(--clr-black-saturation),
-				var(--clr-black-lightness),
-				0.7);
-	}
-
-	& .main-page-title {
-		text-align: center;
-		font-size: var(--size-mega);
-		letter-spacing: var(--letter-space-m);
-		text-shadow: 2px 1px var(--clr-black);
-	}
-}
-
+/* links */
 a:not(.button, .card__link, .skip-to-content-link) {
 	letter-spacing: var(--letter-space);
 	color: var(--link-clr, var(--clr-primary));
@@ -289,6 +261,7 @@ a:not(.button, .card__link, .skip-to-content-link) {
 	}
 }
 
+/* buttons */
 .button {
 	position: relative;
 	display: inline-flex;
@@ -410,6 +383,7 @@ a:not(.button, .card__link, .skip-to-content-link) {
 	--btn-clr: var(--clr-secondary);
 }
 
+/* cards */
 .card {
 	position: relative;
 	border-radius: var(--radi);
@@ -462,6 +436,7 @@ a:not(.button, .card__link, .skip-to-content-link) {
 	margin-top: var(--spacer);
 }
 
+/* tooltips */
 [data-tooltip] {
 	position: relative;
 }

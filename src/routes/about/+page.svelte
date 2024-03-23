@@ -1,14 +1,9 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import DevLinks from '$lib/components/dev-links.svelte';
 	import SkillIcon from '$lib/components/skill-icon.svelte';
-	import { pageTitle, pageDescription } from '$lib/store';
-	import pageData from '../../data.json';
 
-	const { bio, skillIcons } = pageData;
-	const { name, values } = bio;
-
-	pageTitle.set(`About ${name}`);
-	pageDescription.set('');
+	const { bio, skillIcons } = $page.data.portfolio;
 </script>
 
 <div class="wrapper">
@@ -36,11 +31,11 @@
 					<dd><DevLinks direction="2row" justify="center" /></dd>
 				</dl>
 			</article>
-			{#if values}
+			{#if bio.values}
 				<article>
 					<h3 class="subtitle">Values</h3>
 					<ul class="values-list">
-						{#each values as value}
+						{#each bio.values as value}
 							<li>{value}</li>
 						{/each}
 					</ul>

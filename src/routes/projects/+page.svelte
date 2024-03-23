@@ -1,14 +1,9 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import { fade } from 'svelte/transition';
-
 	import TechStack from '$lib/components/tech-stack.svelte';
-	import { pageTitle, pageDescription } from '$lib/store';
-	import pageData from '../../data.json';
 
-	pageTitle.set('Projects');
-	pageDescription.set('');
-
-	const { codeSamples } = pageData;
+	const { codeSamples } = $page.data.portfolio;
 </script>
 
 {#if codeSamples}

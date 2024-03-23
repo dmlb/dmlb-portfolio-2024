@@ -1,18 +1,14 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import Accordion from '$lib/components/accordion.svelte';
 	import TechStack from '$lib/components/tech-stack.svelte';
-	import { pageTitle, pageDescription } from '$lib/store';
-	import pageData from '../../data.json';
 
-	pageTitle.set('CV / Resume');
-	pageDescription.set('');
-
-	const { profDevelopment, education, techWork, otherWork, filmCredits } = pageData;
+	const { profDevelopment, education, techWork, otherWork, filmCredits } = $page.data.portfolio;
 </script>
 <div>
 
 {#if techWork}
-	<Accordion isOpen={true} name="cv" title="Development and Egineering Experience">
+	<Accordion isOpen={true} title="Development and Egineering Experience">
 		<dl class="experience-list">
 			{#each techWork as { position, company, startYear, endYear, location, methodology, techStack }}
 				{@const isCurrent = endYear === 'Current'}
@@ -43,7 +39,7 @@
 {/if}
 
 {#if profDevelopment}
-	<Accordion isOpen={true} name="cv" title="Professional Development Courses and Workshops">
+	<Accordion isOpen={true} title="Professional Development Courses and Workshops">
 		<ul class="experience-list experience-list--columns">
 			{#each profDevelopment as { course, year, techStack }}
 				<li>
@@ -56,7 +52,7 @@
 {/if}
 
 {#if education}
-	<Accordion isOpen={true} name="cv" title="Education">
+	<Accordion isOpen={true} title="Education">
 		<dl class="experience-list">
 			{#each education as { program, degree, year, institution }}
 				<dt class="experience-list__heading">{program}</dt>
@@ -77,7 +73,7 @@
 {/if}
 
 {#if otherWork}
-	<Accordion isOpen={true} name="cv" title="Other Experience">
+	<Accordion isOpen={true} title="Other Experience">
 		<dl class="experience-list">
 			{#each otherWork as { position, company, startYear, endYear }}
 				<dt itemprop="hasOccupation" itemscope itemtype="http://schema.org/Role" class="experience-list__heading">
@@ -95,7 +91,7 @@
 {/if}
 
 {#if filmCredits}
-	<Accordion isOpen={true} name="cv" title="Film and Television Credits">
+	<Accordion isOpen={true} title="Film and Television Credits">
 		<dl class="experience-list">
 			{#each filmCredits as { year, role, title, duration, format, genre, director, festival, synopsis }}
 				<dt class="experience-list__heading">

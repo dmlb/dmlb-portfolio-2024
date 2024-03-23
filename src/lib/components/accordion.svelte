@@ -2,12 +2,11 @@
 	import { fade } from 'svelte/transition';
 
 	export let title: string;
-	export let name: string;
 	export let isOpen: boolean = false;
 </script>
 
 <!-- name of group of mutually-exclusive for accordion behaviour -->
-<details bind:open={isOpen} {name}>
+<details bind:open={isOpen}>
 	<summary>{title}</summary>
 
 	{#if isOpen}

@@ -1,12 +1,8 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import Blockquote from '$lib/components/blockquote.svelte';
-	import { pageTitle, pageDescription } from '$lib/store';
-	import pageData from '../../data.json';
 
-	pageTitle.set('Endorsements');
-	pageDescription.set('');
-
-	const { endorsements, bio } = pageData;
+	const { endorsements, bio } = $page.data.portfolio;
 	endorsements.reverse();
 </script>
 

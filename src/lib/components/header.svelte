@@ -15,12 +15,11 @@
 
 <header>
 	<div class="headline">
-		<img
-			height="80"
-			width="80"
-			src="images/logo-transparent.png"
-			alt="curly braces inside a lens"
-		/>
+		<picture>
+			<source srcset="/images/logo-dmlb.avif" type="image/avif" />
+			<source srcset="/images/logo-dmlb.webp" type="image/webp" />
+			<img height="75" width="75" src="/images/logo-dmlb.png" alt="curly braces inside a lens" />
+		</picture>
 		<h1>
 			{bio.name}
 			<span>{bio.title}</span>

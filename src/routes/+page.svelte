@@ -1,14 +1,11 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import { fade } from 'svelte/transition';
+
 	import DevLinks from '$lib/components/dev-links.svelte';
 	import SocialSvg from '$lib/components/social-svg.svelte';
-	import { pageTitle, pageDescription } from '$lib/store';
-	import pageData from '../data.json';
 
-	pageTitle.set('Welcome');
-	pageDescription.set('');
-
-	const { photography, bio, discord } = pageData;
+	const { photography, bio, discord } = $page.data.portfolio;
 
 	let load: boolean = false;
 	// TODO: hook animation:end bg-image scale-down
@@ -16,9 +13,9 @@
 </script>
 
 <svelte:head>
-	<link rel="preload" href="images/bg/black-swallowtail.jpg" as="image" type="image/jpeg">
-	<link rel="preload" href="images/bg/black-swallowtail.webp" as="image" type="image/webp">
-	<link rel="preload" href="images/bg/black-swallowtail.avif" as="image" type="image/avif">
+	<link rel="preload" href="images/bg/black-swallowtail.jpg" as="image" type="image/jpeg" />
+	<link rel="preload" href="images/bg/black-swallowtail.webp" as="image" type="image/webp" />
+	<link rel="preload" href="images/bg/black-swallowtail.avif" as="image" type="image/avif" />
 </svelte:head>
 
 <div class="bg-image"></div>
@@ -39,13 +36,19 @@
 		<article transition:fade={{ delay: 750, duration: 200 }} class="card">
 			<h3 class="card__header">{discord.name}</h3>
 			<div class="card__content">
+				<picture>
+					<source srcset="/images/a11y-tech-network-discord.avif" type="image/avif" />
+					<source srcset="/images/a11y-tech-network-discord.webp" type="image/webp" />
+				
 				<img
 					class="float-img"
 					height="200"
 					width="200"
 					src="/images/a11y-tech-network-discord.png"
 					alt={discord.alt}
-				/>{@html discord.plug}
+				/>
+			</picture>
+			{@html discord.plug}
 			</div>
 			<div class="card__actions">
 				<a class="button" href={discord.link}
@@ -74,6 +77,24 @@
 </div>
 
 <style>
+	:global(.home) {
+		& header {
+			background-color: hsla(
+				var(--clr-black-hue),
+				var(--clr-black-saturation),
+				var(--clr-black-lightness),
+				0.7
+			);
+		}
+
+		& .main-page-title {
+			text-align: center;
+			font-size: var(--size-mega);
+			letter-spacing: var(--letter-space-m);
+			text-shadow: 2px 1px var(--clr-black);
+		}
+	}
+
 	.bg-image {
 		position: fixed;
 		inset: 0;
