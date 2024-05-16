@@ -2,15 +2,16 @@
 	import { page } from '$app/stores';
 	import DevLinks from '$lib/components/dev-links.svelte';
 	import SkillIcon from '$lib/components/skill-icon.svelte';
+	import type { IPortolioData } from '$lib/models';
 
-	const { bio, skillIcons } = $page.data.portfolio;
+	const { bio, skillIcons } = $page.data.portfolio as IPortolioData;
 </script>
 
 <div class="wrapper">
 	<aside class="sidebar">
 		<div class="sidebar-inner">
-			<article>
-				<h3 class="quick-heading">Quick Info</h3>
+			<article aria-labelledby="dQuick" class="card card--translucent">
+				<h3 id="dQuick" class="card__header">Quick Info</h3>
 				<dl class="quick-list">
 					<dt>Pronouns</dt>
 					<dd>{bio.pronouns}</dd>
@@ -28,12 +29,12 @@
 					<dd>{@html bio.oneliner}</dd>
 
 					<dt>Contact</dt>
-					<dd><DevLinks direction="2row" justify="center" /></dd>
+					<dd><DevLinks /></dd>
 				</dl>
 			</article>
 			{#if bio.values}
-				<article>
-					<h3 class="subtitle">Values</h3>
+				<article aria-labelledby="dValues" class="card card--translucent">
+					<h3 id="dValues" class="card__header">Values</h3>
 					<ul class="values-list">
 						{#each bio.values as value}
 							<li>{value}</li>
@@ -49,8 +50,8 @@
 		<p><a class="button" href="/cv">Read Danielle's Curriculum Vitae</a></p>
 
 		{#if skillIcons}
-			<section>
-				<h3 class="subtitle">Danielle's Skills & Tools</h3>
+			<section aria-labelledby="dSkillTool">
+				<h3 id="dSkillTool" class="subtitle">Danielle's Skills & Tools</h3>
 				<ul class="skill-list">
 					{#each skillIcons as icon}
 						<li><SkillIcon size={48} {icon} /></li>
@@ -67,11 +68,6 @@
 		max-width: 100%;
 	}
 
-	h3 {
-		padding-bottom: var(--spacer-s);
-		border-bottom: 2px solid var(--clr-primary);
-	}
-
 	.bio {
 		--pline-height: 1.75;
 		--pblock-space: 3rem;
@@ -79,11 +75,8 @@
 
 	.sidebar-inner {
 		padding: var(--spacer-m);
-		border-radius: var(--radi);
-	}
-
-	.quick-heading {
-		margin-top: unset;
+		container-type: inline-size;
+  		container-name: sidebar;
 	}
 
 	.quick-list {
@@ -97,7 +90,7 @@
 		}
 
 		& dd {
-			line-height: 1.2;
+			line-height: 1.5;
 			margin: 0 0 var(--spacer-m) 0;
 		}
 	}
@@ -111,7 +104,7 @@
 		gap: var(--spacer-m);
 	}
 
-	@media (min-width: 960px) {
+	@container main (min-width: 960px) {
 		.wrapper {
 			display: grid;
 			grid-template-columns: 1fr 360px;
@@ -126,14 +119,7 @@
 		.about-content {
 			grid-area: info;
 		}
-
-		.sidebar-inner {
-			background-color: hsla(
-				var(--clr-primary-hue),
-				calc(var(--clr-primary-saturation) + 50%),
-				calc(var(--clr-primary-lightness) - 60%),
-				0.25
-			);
-		}
 	}
+
+	
 </style>

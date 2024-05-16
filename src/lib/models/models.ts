@@ -1,10 +1,12 @@
+import type { IProject } from "./project";
+
 export interface IPortolioData {
     bio: IBio;
     discord: IDiscord;
     photography: IPhotography;
     profSocials: IProfessionalSocial[];
     skillIcons: string[];
-    codeSamples: ICodeSample[];
+    codeSamples: IProject[];
     techWork: ITechWork[];
     otherWork: IOtherWork[];
     filmCredits: IFilmCredit[];
@@ -69,15 +71,8 @@ export interface ITechWork {
     techStack: string[];
 }
 
-export interface ICodeSample {
-    title: string;
-    link: string;
-    type: string;
-    techStack: string[];
-}
-
 export interface IProfessionalSocial {
-    site: string;
+    website: string;
     link: string;
 }
 

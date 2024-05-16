@@ -1,11 +1,14 @@
 <script lang="ts">
+	/**
+	 * blockquote component
+	 */
 	export let quote: string;
 	export let person: string;
 	export let position: string;
 	export let company: string;
 </script>
 
-<blockquote>
+<blockquote data-testid="scmp-blockquote">
 	{quote}
 	<cite>
 		<span class="name">{person}</span>

@@ -1,27 +1,29 @@
 <script lang="ts">
+	/**
+	 * component for resume and social media links
+	*/
 	import pageData from '../../data.json';
 	import SocialSvg from './social-svg.svelte';
 	const { profSocials, bio } = pageData;
 	const { hideResume, resumePdfUrl } = bio;
 
+	/** display options */
 	export let socialsOnly: boolean = false;
-	export let direction: 'row' | 'column' | '2row' = 'row';
-	export let justify: 'center' | '' = '';
 </script>
 
 {#if profSocials || !hideResume}
-	<ul class="dev-links dev-links--{direction}  dev-links--{justify}">
+	<ul data-testid="scmp-dev-links" class="dev-links">
 		{#if !hideResume && !socialsOnly}
 			<li class="resume-link">
 				<a class="button button--large button--accent" href={resumePdfUrl}>Download Resume</a>
 			</li>
 		{/if}
 
-		{#each profSocials as { site, link }}
+		{#each profSocials as { website, link }}
 			<li>
 				<a class="button button--icon button--accent" href={link}>
-					<SocialSvg socialName={site} iconSize={32} />
-					<span class="sr-only">{site}</span>
+					<SocialSvg socialName={website} iconSize={32} />
+					<span class="sr-only">{website}</span>
 				</a>
 			</li>
 		{/each}
@@ -38,24 +40,10 @@
 		align-items: center;
 	}
 
-	.dev-links--center {
-		justify-content: center;
-
-		& .resume-link {
+	@container (max-width: 640px) {
+		.dev-links {
+			flex-wrap: wrap;
 			justify-content: center;
-		}
-	}
-
-	.dev-links--column {
-		flex-direction: column;
-	}
-
-	.dev-links--2row {
-		flex-wrap: wrap;
-
-		& .resume-link {
-			flex: 0 0 100%;
-			display: flex;
 		}
 	}
 </style>

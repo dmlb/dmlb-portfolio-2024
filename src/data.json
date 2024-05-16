@@ -3,7 +3,7 @@
 		"name": "Danielle Bastien",
 		"nickname": "dmlb",
 		"pronouns": "they / them",
-		"title": "Front-End Web Developer • Accessibility Technical Lead",
+		"title": "Senior Front-End Developer • Web Accessibility • Technical Lead",
 		"location": "Calgary",
 		"landAcknowledgement": {
 			"location": "Moh'kinsstis, where the Bow River meets the Elbow River",
@@ -14,7 +14,7 @@
 		"startYear": 2005,
 		"professionalStartYear": 2013,
 		"charlimit": "Danielle Bastien, is a dedicated and passionate Front-End Web Developer in Calgary who is committed to delivering accessible and usable experiences to users across all devices and interfaces. Their focus is always on developing interfaces, tooling and processes that are scalable and accessible to all.",
-		"oneliner": "<span itemprop='jobTitle'>Technical Lead, Front-End Web Developer</span> in <span itemprop='workLocation'>Calgary</span> currently working with <a itemprop='worksFor' href='https://approachci.com/'>Approach Controls</a>",
+		"oneliner": "<span itemprop='jobTitle'>Technical Lead, Senior Front-End Engineer</span> in <span itemprop='workLocation'>Calgary</span> currently working with <a itemprop='worksFor' href='https://approachci.com/'>Approach Controls</a>",
 		"emojiliner": "💬 🖥 🛠",
 		"workbio": "<p><span itemprop='givenName'>Danielle</span> is a subject-matter expert front-end web developer working to bring accessible and usable experiences to users in the browser on any given device with any tool or interfacing method that enables access and inclusion.</p><p>Danielle's expertise includes project estimation and organization, design analysis, interpretation and architectural planning through an accessible and scalability lens and the development and implementation of interfaces, tooling and processes to enable the software development lifecycle. Danielle enjoys exploring new ideas, prototyping and iterating solutions and writing technical documentation. Danielle's colleagues would describe them as an attentive to detail, disciplined, organized, and resourceful individual who leads with curiosity.</p><p>Currently, Danielle is seeking opportunities that will allow them to develop and promote technologies that are accessible and inclusive.</p>",
 		"values": [
@@ -44,22 +44,22 @@
 	},
 	"profSocials": [
 		{
-			"site": "linkedin",
+			"website": "linkedin",
 			"link": "https://www.linkedin.com/in/daniellemlbastien"
 		},
 		{
-			"site": "codepen",
+			"website": "codepen",
 			"link": "https://codepen.io/dmlb"
 		},
 		{
-			"site": "github",
+			"website": "github",
 			"link": "https://github.com/dmlb"
 		}
 	],
 	"skillIcons": [
-		"html5",
+		"html",
 		"accessibility",
-		"css3",
+		"css",
 		"sass",
 		"less",
 		"css-modules",
@@ -174,11 +174,11 @@
 		{
 			"title": "Postmedia Design System",
 			"link": "https://youtu.be/Hw0S44-HZzw",
-			"type": "video",
+			"type": "design system",
 			"techStack": [
 				"accessibility",
-				"html5",
-				"css3",
+				"html",
+				"css",
 				"sass",
 				"javascript",
 				"typescript",
@@ -191,11 +191,11 @@
 		{
 			"title": "411 Styleguide",
 			"link": "https://youtu.be/w9AQpgJY-TE",
-			"type": "video",
+			"type": "design system",
 			"techStack": [
 				"accessibility",
-				"html5",
-				"css3",
+				"html",
+				"css",
 				"sass",
 				"bootstrap",
 				"javascript",
@@ -207,11 +207,11 @@
 		{
 			"title": "Climate Town Knowledge Hub",
 			"link": "https://hub.climatetownproductions.com/",
-			"type": "site",
+			"type": "website",
 			"techStack": [
 				"accessibility",
-				"html5",
-				"css3",
+				"html",
+				"css",
 				"tailwind-css",
 				"javascript",
 				"typescript",
@@ -222,11 +222,11 @@
 		{
 			"title": "Bird Photography",
 			"link": "https://bird-photos.daniellemlbastien.com/",
-			"type": "web-app",
+			"type": "web application",
 			"techStack": [
 				"accessibility",
-				"html5",
-				"css3",
+				"html",
+				"css",
 				"javascript",
 				"typescript",
 				"react",
@@ -240,11 +240,11 @@
 		{
 			"title": "Danielle's Cooking Recipes",
 			"link": "https://cooking.daniellemlbastien.com/",
-			"type": "web-app",
+			"type": "web application",
 			"techStack": [
 				"accessibility",
-				"html5",
-				"css3",
+				"html",
+				"css",
 				"javascript",
 				"typescript",
 				"react",
@@ -258,15 +258,15 @@
 		{
 			"title": "Router Transitions",
 			"link": "https://personality.daniellemlbastien.com/",
-			"type": "site",
-			"techStack": ["css3", "javascript", "vue-dot-js"]
+			"type": "website",
+			"techStack": ["css", "javascript", "vue-dot-js"]
 		},
 		{
 			"title": "21 Days of Resilience Router Subscriptions",
 			"link": "https://resilience.daniellemlbastien.com/",
-			"type": "site",
+			"type": "website",
 			"techStack": [
-				"css3",
+				"css",
 				"javascript",
 				"typescript",
 				"angular",
@@ -278,133 +278,133 @@
 		{
 			"title": "Covid Care: Pandemic Safety Communication Tool",
 			"link": "https://covidcare.daniellemlbastien.com/",
-			"type": "site",
-			"techStack": ["html5", "material-design", "javascript", "typescript", "angular"]
+			"type": "website",
+			"techStack": ["html", "material-design", "javascript", "typescript", "angular"]
 		},
 		{
 			"title": "Spotify Playlist Switcher",
 			"link": "https://playlists.daniellemlbastien.com/",
-			"type": "site",
-			"techStack": ["html5", "css3", "javascript", "react", "google-fonts"]
+			"type": "website",
+			"techStack": ["html", "css", "javascript", "react", "google-fonts"]
 		},
 		{
 			"title": "Web API Notifications",
 			"link": "https://notification.daniellemlbastien.com/",
-			"type": "site",
-			"techStack": ["html5", "javascript"]
+			"type": "code snippet",
+			"techStack": ["html", "javascript"]
 		},
 		{
 			"title": "Canvas Particles Valentine Playlist",
 			"link": "https://yourvalentine.daniellemlbastien.com",
-			"type": "site",
-			"techStack": ["html5", "css3", "javascript", "jquery", "google-fonts"]
+			"type": "website",
+			"techStack": ["html", "css", "javascript", "jquery", "google-fonts"]
 		},
 		{
 			"title": "Alice in CSS Zen Garden",
 			"link": "https://zen.daniellemlbastien.com",
-			"type": "site",
-			"techStack": ["css3"]
+			"type": "website",
+			"techStack": ["css"]
 		},
 		{
 			"title": "Border Gradient",
 			"link": "https://codepen.io/dmlb/pen/PpVNdr",
-			"type": "pen",
-			"techStack": ["css3", "sass"]
+			"type": "code snippet",
+			"techStack": ["css", "sass"]
 		},
 		{
-			"title": "Grid Pull Quote",
+			"title": "CSS Grid Pull Quote",
 			"link": "https://codepen.io/dmlb/pen/bzbPpG",
-			"type": "pen",
-			"techStack": ["css3", "sass"]
+			"type": "code snippet",
+			"techStack": ["css", "sass"]
 		},
 		{
-			"title": "Grid Layering Elements",
+			"title": "CSS Grid Layering Elements",
 			"link": "https://codepen.io/dmlb/pen/rqwdrN",
-			"type": "pen",
-			"techStack": ["css3", "sass"]
+			"type": "code snippet",
+			"techStack": ["css", "sass"]
 		},
 		{
 			"title": "Border Layer Illusion",
 			"link": "https://codepen.io/dmlb/pen/GXddpy",
-			"type": "pen",
-			"techStack": ["css3", "sass"]
+			"type": "code snippet",
+			"techStack": ["css", "sass"]
 		},
 		{
 			"title": "Horizontal Split Screen",
 			"link": "https://codepen.io/dmlb/pen/WpXXYy",
-			"type": "pen",
-			"techStack": ["css3", "sass"]
+			"type": "code snippet",
+			"techStack": ["css", "sass"]
 		},
 		{
 			"title": "Vertical Split Screen",
 			"link": "https://codepen.io/dmlb/pen/YVLrzv",
-			"type": "pen",
-			"techStack": ["css3", "sass"]
+			"type": "code snippet",
+			"techStack": ["css", "sass"]
 		},
 		{
 			"title": "Grid Layout with Gaps",
 			"link": "https://codepen.io/dmlb/pen/gWzxWe",
-			"type": "pen",
-			"techStack": ["css3", "sass"]
+			"type": "code snippet",
+			"techStack": ["css", "sass"]
 		},
 		{
 			"title": "Grid Layout",
 			"link": "https://codepen.io/dmlb/pen/WjJOXX",
-			"type": "pen",
-			"techStack": ["css3", "sass"]
+			"type": "code snippet",
+			"techStack": ["css", "sass"]
 		},
 		{
 			"title": "Footer Form",
 			"link": "https://codepen.io/dmlb/pen/OmYQYJ",
-			"type": "pen",
-			"techStack": ["html5", "css3", "sass"]
+			"type": "code snippet",
+			"techStack": ["html", "css", "sass"]
 		},
 		{
 			"title": "Multiple Background Blending",
 			"link": "https://codepen.io/dmlb/pen/BWvgYp",
-			"type": "pen",
-			"techStack": ["css3", "sass"]
+			"type": "code snippet",
+			"techStack": ["css", "sass"]
 		},
 		{
 			"title": "Backdrop Filter",
 			"link": "https://codepen.io/dmlb/pen/wJNXXV",
-			"type": "pen",
-			"techStack": ["css3", "sass"]
+			"type": "code snippet",
+			"techStack": ["css", "sass"]
 		},
 		{
 			"title": "Header Shapes",
 			"link": "https://codepen.io/dmlb/pen/LjGMpd",
-			"type": "pen",
-			"techStack": ["css3", "sass"]
+			"type": "code snippet",
+			"techStack": ["css", "sass"]
 		},
 		{
 			"title": "Photo Cards",
 			"link": "https://codepen.io/dmlb/pen/vxpNpL",
-			"type": "pen",
-			"techStack": ["css3", "sass"]
+			"type": "code snippet",
+			"techStack": ["css", "sass"]
 		},
 		{
 			"title": "Rainbow Border Cards",
 			"link": "https://codepen.io/dmlb/pen/aWYzNB",
-			"type": "pen",
-			"techStack": ["css3", "sass"]
+			"type": "code snippet",
+			"techStack": ["css", "sass"]
 		},
 		{
-			"title": "Grid Newspaper Layout",
+			"title": "CSS Grid Newspaper Layout",
 			"link": "https://codepen.io/dmlb/pen/yLzVBxm",
-			"type": "pen",
-			"techStack": ["css3", "sass"]
+			"type": "code snippet",
+			"techStack": ["css", "sass"]
 		},
 		{
 			"title": "Animation Timeline Progress Scrolling",
 			"link": "https://codepen.io/dmlb/pen/KKQMzJg",
-			"type": "pen",
-			"techStack": ["css3", "sass", "javascript"]
+			"type": "code snippet",
+			"techStack": ["css", "sass", "javascript"]
 		}
 	],
 	"techWork": [
 		{
-			"position": "Lead Front-End Developer",
+			"position": "Senior Front-End Developer, Technical Lead",
 			"startYear": "2022",
 			"endYear": "Current",
 			"company": "Approach Controls Inc",
@@ -413,8 +413,8 @@
 			"location": "Hybrid Remote",
 			"techStack": [
 				"accessibility",
-				"html5",
-				"css3",
+				"html",
+				"css",
 				"sass",
 				"bem",
 				"material-design",
@@ -468,7 +468,7 @@
 			]
 		},
 		{
-			"position": "Lead Front-End Web Developer",
+			"position": "Senior Front-End Web Developer, Technical Lead",
 			"startYear": "2019",
 			"endYear": "2022",
 			"company": "Postmedia Network Inc.",
@@ -477,8 +477,8 @@
 			"location": "Remote",
 			"techStack": [
 				"accessibility",
-				"html5",
-				"css3",
+				"html",
+				"css",
 				"sass",
 				"bem",
 				"autoprefixer",
@@ -542,8 +542,8 @@
 			"location": "Hybrid Remote",
 			"techStack": [
 				"accessibility",
-				"html5",
-				"css3",
+				"html",
+				"css",
 				"sass",
 				"bootstrap",
 				"autoprefixer",
@@ -598,8 +598,8 @@
 			"methodology": "Agile Development",
 			"location": "On Site",
 			"techStack": [
-				"html5",
-				"css3",
+				"html",
+				"css",
 				"less",
 				"bootstrap",
 				"javascript",
@@ -870,7 +870,7 @@
 		{
 			"year": "2021",
 			"course": "Workshop: Dynamic CSS with Custom Properties",
-			"techStack": ["css3", "javascript"]
+			"techStack": ["css", "javascript"]
 		},
 		{
 			"year": "2020",
@@ -895,7 +895,7 @@
 		{
 			"year": "2017",
 			"course": "Google mSite Hackathon",
-			"techStack": ["html5", "css3", "javascript", "angular", "pwa"]
+			"techStack": ["html", "css", "javascript", "angular", "pwa"]
 		},
 		{
 			"year": "2011",

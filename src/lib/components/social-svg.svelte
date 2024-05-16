@@ -1,4 +1,7 @@
 <script lang="ts">
+	/**
+	 * social media svg html icons
+	 */
 	export let socialName: string | null = null;
 	export let iconSize: number = 24;
 </script>

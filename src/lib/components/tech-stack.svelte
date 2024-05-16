@@ -1,4 +1,7 @@
 <script lang="ts">
+	/**
+	 * tech stack icon list component
+	*/
 	import SkillIcon from './skill-icon.svelte';
 
 	export let techStack: string[] = [];
@@ -6,7 +9,7 @@
 </script>
 
 {#if techStack}
-	<ul class="tech-stack-list">
+	<ul data-testid="scmp-tech-stack" class="tech-stack-list">
 		{#each techStack as icon}
 			<li><SkillIcon size={iconSize} {icon} /></li>
 		{/each}

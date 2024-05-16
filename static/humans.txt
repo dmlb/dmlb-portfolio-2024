@@ -3,7 +3,7 @@
   Site: https://daniellemlbastien.com
 
 /* SITE */
-  Last update: 20/03/2024
+  Last update: 14/05/2024
   Doctype: HTML5
   IDE: VS Code
 
@@ -11,6 +11,7 @@
 /* CREDITS */
 
 Framework: https://svelte.dev/
-Icons: https://github.com/danleech/simple-icons
+Brand Icons: https://github.com/danleech/simple-icons
 Accessibility Icons: https://www.svgrepo.com/
 Favicons: http://realfavicongenerator.net/
+Open Dyslexic Font: https://opendyslexic.org/

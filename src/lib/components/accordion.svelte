@@ -1,12 +1,15 @@
 <script lang="ts">
+	/**
+	 * accordion component 
+	 * animate open close of details summary element
+	*/
 	import { fade } from 'svelte/transition';
 
 	export let title: string;
 	export let isOpen: boolean = false;
 </script>
 
-<!-- name of group of mutually-exclusive for accordion behaviour -->
-<details bind:open={isOpen}>
+<details data-testid="scmp-accordion" bind:open={isOpen}>
 	<summary>{title}</summary>
 
 	{#if isOpen}

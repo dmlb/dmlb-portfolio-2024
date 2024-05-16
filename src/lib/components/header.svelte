@@ -1,19 +1,33 @@
 <script lang="ts">
+	/**
+	 * global site header, navigation
+	*/
 	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
 	import pageData from '../../data.json';
 	import DevLinks from './dev-links.svelte';
+	import SiteSettings from './site-settings.svelte';
 	const { bio } = pageData;
+
+	/** flag for broswer support of dialog element */
+	let dialogSupported: boolean = false;
+	/**
+	 *  check for browser support of dialog element actions
+	*/
+	onMount(() => {
+		dialogSupported = HTMLDialogElement.prototype.hasOwnProperty("showModal") || false
+	});
 
 	const paths = [
 		{ name: 'Home', path: '/' },
-		{ name: 'About', path: '/about' },
-		{ name: 'CV', path: '/cv' },
-		{ name: 'Projects', path: '/projects' },
-		{ name: 'Endorsements', path: '/endorsements' }
+		{ name: 'About', path: '/about/' },
+		{ name: 'CV', path: '/cv/' },
+		{ name: 'Projects', path: '/projects/' },
+		{ name: 'Endorsements', path: '/endorsements/' }
 	];
 </script>
 
-<header>
+<header data-testid="scmp-header">
 	<div class="headline">
 		<picture>
 			<source srcset="/images/logo-dmlb.avif" type="image/avif" />
@@ -29,6 +43,11 @@
 		<DevLinks socialsOnly={true} />
 	</div>
 
+	{#if dialogSupported}
+		<div class="site-settings">
+			<SiteSettings></SiteSettings>
+		</div>
+	{/if}
 	<nav>
 		{#each paths as { name, path }}
 			{@const active = $page.url.pathname === path ? 'page' : null}
@@ -48,6 +67,13 @@
 		align-items: center;
 		justify-content: center;
 		gap: var(--spacer);
+		position: relative;
+	}
+
+	.site-settings {
+		position: absolute;
+		top: var(--spacer);
+		right: var(--spacer);
 	}
 
 	.headline {
@@ -105,5 +131,9 @@
 				view-transition-name: active-page;
 			}
 		}
+	}
+
+	:global([data-mode="light"]) .headline picture {
+		filter: sepia(1) brightness(50%) contrast(200%);	
 	}
 </style>
