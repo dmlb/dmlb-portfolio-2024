@@ -13,12 +13,12 @@ test('should not have any automatically detectable accessibility issues', async 
 
 test('has expected title', async ({ page }) => {
     await page.goto(cvPageURL);
-    await expect(page).toHaveTitle(/CV \/ Resume/);
+    await expect(page).toHaveTitle(/Curriculum Vitae \/ Résumé/);
 });
 
 test('has expected h2', async ({ page }) => {
     await page.goto(cvPageURL);
-    await expect(page.getByRole('heading', { name: 'CV / Resume' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Curriculum Vitae / Résumé' })).toBeVisible();
 });
 
 

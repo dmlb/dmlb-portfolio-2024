@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import Footer from '$lib/components/footer.svelte';
 	import Header from '$lib/components/header.svelte';
 	import ViewTransition from '$lib/components/view-transition.svelte';
 	import type { IPortolioData } from '$lib/models/models.js';
@@ -10,8 +11,8 @@
 </script>
 
 <svelte:head>
-	<title>{$page.data.title} | {bio.name} {bio.title}</title>
-	<meta name="og:title" content="{$page.data.title} | {bio.name} {bio.title}" />
+	<title>{$page.data.title} | {bio.name} | {bio.title}</title>
+	<meta name="og:title" content="{$page.data.title} | {bio.name} | {bio.title}" />
 	<meta name="description" content={$page.data.description} />
 	<meta name="og:description" content={$page.data.description} />
 	<meta property="og:site_name" content={bio.name} />
@@ -31,4 +32,5 @@
 		<h2 id="mainTitle" class="main-page-title">{$page.data.title}</h2>
 		<slot />
 	</main>
+	<Footer />
 </div>

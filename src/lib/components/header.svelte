@@ -48,7 +48,7 @@
 			<SiteSettings></SiteSettings>
 		</div>
 	{/if}
-	<nav>
+	<nav aria-label="main site">
 		{#each paths as { name, path }}
 			{@const active = $page.url.pathname === path ? 'page' : null}
 			<a aria-current={active} href={path}>{name}</a>

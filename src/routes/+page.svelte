@@ -9,7 +9,7 @@
 </script>
 
 <div class="card-wrapper">
-	<article style="--animation-order:1" aria-labelledby="dWork" class="card">
+	<article data-testid="home-card-intro" style="--animation-order:1" aria-labelledby="dWork" class="card">
 		<h3 id="dWork" class="card__header">Danielle's Work {bio.emojiliner}</h3>
 		<p class="card__content">{bio.charlimit}</p>
 		<div class="card__actions card__actions--center">
@@ -64,12 +64,13 @@
 
 <style>
 	:global(.home) {
-		& header {
+		& header,
+		& footer {
 			background-color: hsla(
 				var(--clr-black-hue),
 				var(--clr-black-saturation),
 				var(--clr-black-lightness),
-				0.7
+				0.8
 			);
 		}
 
@@ -82,13 +83,9 @@
 	}
 
 	:global([data-mode='light'] .home) {
-		& header {
-			background-color: hsla(
-				var(--clr-white-hue),
-				var(--clr-white-saturation),
-				var(--clr-white-lightness),
-				0.75
-			);
+		& header,
+		& footer {
+			background-color: var(--canvas-bg);
 		}
 
 		& .main-page-title {

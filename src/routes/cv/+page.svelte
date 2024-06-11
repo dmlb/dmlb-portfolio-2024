@@ -11,20 +11,15 @@
 <div>
 	{#if techWork}
 		<Accordion isOpen={true} title="Development and Engineering Experience">
-			<dl class="experience-list">
-				{#each techWork as { position, company, startYear, endYear, location, methodology, techStack }}
+			<ul class="experience-list">
+				{#each techWork as { position, company, startYear, endYear, location, methodology, techStack, description }}
 					{@const isCurrent = endYear === 'Current'}
 					{@const itemTypeUrl = isCurrent
 						? `http://schema.org/Occupation`
 						: `http://schema.org/Role`}
 
-					<dt
-						itemprop="hasOccupation"
-						itemscope
-						itemtype={itemTypeUrl}
-						class="experience-list__heading"
-					>
-						{company} ({startYear}&ndash;{endYear})
+					<li itemprop="hasOccupation" itemscope itemtype={itemTypeUrl}>
+						<h3 class="experience-list__heading">{company} ({startYear}&ndash;{endYear})</h3>
 						{#if isCurrent}
 							<!-- http://schema.org/Occupation -->
 							<meta itemprop="name" content={position} />
@@ -36,14 +31,17 @@
 							<meta itemprop="startDate" content={startYear} />
 							<meta itemprop="endDate" content={endYear} />
 						{/if}
-					</dt>
-					<dd class="experience-list__details">
-						<p class="experience-list__position">{position}</p>
-						<p class="experience-list__extras">{location} • {methodology}</p>
-						<div class="experience-list__stack"><TechStack {techStack} /></div>
-					</dd>
+						<div class="experience-list__details">
+							<p class="experience-list__position">{position}</p>
+							<p class="experience-list__extras">{location} • {methodology}</p>
+							{#if description}<p class="experience-list__description"></p>{/if}
+							{#if techStack && techStack.length > 0}
+								<div class="experience-list__stack"><TechStack {techStack} /></div>
+							{/if}
+						</div>
+					</li>
 				{/each}
-			</dl>
+			</ul>
 		</Accordion>
 	{/if}
 
@@ -53,7 +51,9 @@
 				{#each profDevelopment as { course, year, techStack }}
 					<li>
 						<span itemprop="knowsAbout">{@html course}</span> ({year})
-						<span class="tech-stack-inline"><TechStack iconSize={16} {techStack} /></span>
+						{#if techStack && techStack.length > 0}
+						<div class="tech-stack-inline"><TechStack iconSize={16} {techStack} /></div>
+						{/if}
 					</li>
 				{/each}
 			</ul>
@@ -62,88 +62,99 @@
 
 	{#if education}
 		<Accordion isOpen={true} title="Education">
-			<dl class="experience-list">
+			<ul class="experience-list">
 				{#each education as { program, degree, year, institution }}
-					<dt class="experience-list__heading">{program}</dt>
-					<dd class="experience-list__details">
-						<p
-							itemprop="hasCredential"
-							itemscope
-							itemtype="https://schema.org/EducationalOccupationalCredential"
-							class="experience-list__position"
-						>
-							<meta itemprop="credentialCategory" content={program} />
-							<span itemprop="educationalLevel">{degree}</span>&nbsp;
-							<span itemprop="datePublished">{year}</span>
-						</p>
-						<p
-							itemprop="alumniOf"
-							itemscope
-							itemtype="https://schema.org/EducationalOrganization"
-							class="experience-list__extras"
-						>
-							<span itemprop="legalName">{institution}</span>
-						</p>
-					</dd>
+					<li>
+						<h3 class="experience-list__heading">{program}</h3>
+						<div class="experience-list__details">
+							<p
+								itemprop="hasCredential"
+								itemscope
+								itemtype="https://schema.org/EducationalOccupationalCredential"
+								class="experience-list__position"
+							>
+								<meta itemprop="credentialCategory" content={program} />
+								<span itemprop="educationalLevel">{degree}</span>&nbsp;
+								<span itemprop="datePublished">{year}</span>
+							</p>
+							<p
+								itemprop="alumniOf"
+								itemscope
+								itemtype="https://schema.org/EducationalOrganization"
+								class="experience-list__extras"
+							>
+								<span itemprop="legalName">{institution}</span>
+							</p>
+						</div>
+					</li>
 				{/each}
-			</dl>
+			</ul>
 		</Accordion>
 	{/if}
 
 	{#if otherWork}
 		<Accordion isOpen={true} title="Other Experience">
-			<dl class="experience-list">
+			<ul class="experience-list">
 				{#each otherWork as { position, company, startYear, endYear }}
-					<dt
-						itemprop="hasOccupation"
-						itemscope
-						itemtype="http://schema.org/Role"
-						class="experience-list__heading"
-					>
-						{company} ({startYear}&ndash;{endYear})
-						<meta itemprop="roleName" content={position} />
-						<meta itemprop="startDate" content={startYear} />
-						<meta itemprop="endDate" content={endYear} />
-					</dt>
-					<dd class="experience-list__details">
-						<p class="experience-list__position">{position}</p>
-					</dd>
+					<li>
+						<h3
+							itemprop="hasOccupation"
+							itemscope
+							itemtype="http://schema.org/Role"
+							class="experience-list__heading"
+						>
+							{company} ({startYear}&ndash;{endYear})
+							<meta itemprop="roleName" content={position} />
+							<meta itemprop="startDate" content={startYear} />
+							<meta itemprop="endDate" content={endYear} />
+						</h3>
+						<div class="experience-list__details">
+							<p class="experience-list__position">{position}</p>
+						</div>
+					</li>
 				{/each}
-			</dl>
+			</ul>
 		</Accordion>
 	{/if}
 
 	{#if filmCredits}
 		<Accordion isOpen={true} title="Film and Television Credits">
-			<dl class="experience-list">
+			<ul class="experience-list">
 				{#each filmCredits as { year, role, title, duration, format, genre, director, festival, synopsis }}
-					<dt class="experience-list__heading">
-						{title} ({year})
-					</dt>
-					<dd itemscope itemtype="https://schema.org/CreativeWork" class="experience-list__details">
-						<meta itemprop="dateCreated" content={year} />
-						<p class="experience-list__position">{role}</p>
-
+					<li>
+						<h3 class="experience-list__heading">
+							{title} ({year})
+						</h3>
 						<div
-							itemprop="video"
 							itemscope
-							itemtype="https://schema.org/VideoObject"
-							class="experience-list__extras"
+							itemtype="https://schema.org/CreativeWork"
+							class="experience-list__details"
 						>
-							<p>
-								<span itemprop="genre">{genre}</span> | <span itemprop="duration">{duration}</span>
-								| <span itemprop="encodingFormat">{format}</span> | <strong>Director:</strong>
-								<span itemprop="director">{director}</span>{#if festival}
-									&nbsp;| <span itemprop="award">{festival}</span>{/if}
-							</p>
+							<meta itemprop="dateCreated" content={year} />
+							<p class="experience-list__position">{role}</p>
 
-							{#if synopsis}
-								<p itemprop="abstract"><strong>Synopsis:</strong> {@html synopsis}</p>
-							{/if}
+							<div
+								itemprop="video"
+								itemscope
+								itemtype="https://schema.org/VideoObject"
+								class="experience-list__extras"
+							>
+								<p>
+									<span itemprop="genre">{genre}</span> |
+									<span itemprop="duration">{duration}</span>
+									| <span itemprop="encodingFormat">{format}</span> | <strong>Director:</strong>
+									<span itemprop="director">{director}</span>{#if festival}
+										&nbsp;| <span itemprop="award">{festival}</span>{/if}
+								</p>
+
+								{#if synopsis}
+									<p itemprop="abstract"><strong>Synopsis:</strong> {@html synopsis}</p>
+								{/if}
+							</div>
 						</div>
-					</dd>
+					</li>
 				{/each}
-			</dl>
+			</ul>
 		</Accordion>
 	{/if}
 </div>
@@ -177,10 +188,6 @@
 
 	.experience-list__extras {
 		color: var(--clr-gray);
-	}
-
-	.experience-list dd {
-		margin: var(--spacer-m) 0 var(--spacer-l);
 	}
 
 	.tech-stack-inline {

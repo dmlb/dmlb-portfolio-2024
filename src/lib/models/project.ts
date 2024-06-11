@@ -5,5 +5,6 @@ export interface IProject {
     title: string;
     link: string;
     type: string;
+    description?: string;
     techStack: string[];
 }

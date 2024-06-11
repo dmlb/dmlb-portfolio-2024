@@ -1,6 +1,8 @@
 # dmlb-portfolio-2024
 
-CREDITS: [humans.txt](static/humans.txt)
+Credits: [humans.txt](static/humans.txt)
+
+Accessibility Statement: [Accessibility Statement.md](ACCESSIBILITY_STATEMENT.md)
 
 ## Developing
 

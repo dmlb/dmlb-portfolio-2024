@@ -68,11 +68,13 @@ export interface ITechWork {
     url: string;
     methodology: string;
     location: string;
+    description?: string;
     techStack: string[];
 }
 
 export interface IProfessionalSocial {
     website: string;
+    alt: string;
     link: string;
 }
 

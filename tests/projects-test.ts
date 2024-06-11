@@ -8,7 +8,7 @@ test('should not have any automatically detectable accessibility issues', async 
     await page.goto(projectPageURL);
 
     // todo getting incorrect hex values
-    const accessibilityScanResults = await new AxeBuilder({ page }).disableRules(['color-contrast']).analyze();
+    const accessibilityScanResults = await new AxeBuilder({ page }).analyze();
 
     expect(accessibilityScanResults.violations).toEqual([]);
 });

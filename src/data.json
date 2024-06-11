@@ -14,7 +14,7 @@
 		"startYear": 2005,
 		"professionalStartYear": 2013,
 		"charlimit": "Danielle Bastien, is a dedicated and passionate Front-End Web Developer in Calgary who is committed to delivering accessible and usable experiences to users across all devices and interfaces. Their focus is always on developing interfaces, tooling and processes that are scalable and accessible to all.",
-		"oneliner": "<span itemprop='jobTitle'>Technical Lead, Senior Front-End Engineer</span> in <span itemprop='workLocation'>Calgary</span> currently working with <a itemprop='worksFor' href='https://approachci.com/'>Approach Controls</a>",
+		"oneliner": "<span itemprop='jobTitle'>Front-End Engineer</span> in <span itemprop='workLocation'>Calgary</span>",
 		"emojiliner": "💬 🖥 🛠",
 		"workbio": "<p><span itemprop='givenName'>Danielle</span> is a subject-matter expert front-end web developer working to bring accessible and usable experiences to users in the browser on any given device with any tool or interfacing method that enables access and inclusion.</p><p>Danielle's expertise includes project estimation and organization, design analysis, interpretation and architectural planning through an accessible and scalability lens and the development and implementation of interfaces, tooling and processes to enable the software development lifecycle. Danielle enjoys exploring new ideas, prototyping and iterating solutions and writing technical documentation. Danielle's colleagues would describe them as an attentive to detail, disciplined, organized, and resourceful individual who leads with curiosity.</p><p>Currently, Danielle is seeking opportunities that will allow them to develop and promote technologies that are accessible and inclusive.</p>",
 		"values": [
@@ -45,14 +45,17 @@
 	"profSocials": [
 		{
 			"website": "linkedin",
+			"alt": "linked in",
 			"link": "https://www.linkedin.com/in/daniellemlbastien"
 		},
 		{
 			"website": "codepen",
+			"alt": "code pen",
 			"link": "https://codepen.io/dmlb"
 		},
 		{
 			"website": "github",
+			"alt": "git hub",
 			"link": "https://github.com/dmlb"
 		}
 	],
@@ -406,9 +409,9 @@
 		{
 			"position": "Senior Front-End Developer, Technical Lead",
 			"startYear": "2022",
-			"endYear": "Current",
-			"company": "Approach Controls Inc",
-			"url": "https://www.postmedia.com/",
+			"endYear": "2024",
+			"company": "Approach Controls Inc.",
+			"url": "https://approachci.com/",
 			"methodology": "Agile Development",
 			"location": "Hybrid Remote",
 			"techStack": [
@@ -472,7 +475,7 @@
 			"startYear": "2019",
 			"endYear": "2022",
 			"company": "Postmedia Network Inc.",
-			"url": "https://approachci.com/",
+			"url": "https://www.postmedia.com/",
 			"methodology": "Agile Development",
 			"location": "Remote",
 			"techStack": [
@@ -687,7 +690,7 @@
 			"genre": "Drama",
 			"director": "Maria Alejandra Morales",
 			"tagline": "Every Crossing Doesn't Guarantee Happiness",
-			"synopsis": "<span imtemprop='character'>Dalgo</span> and <span imtemprop='character'>Tristan</span> are two USA border patrol officers on a routine inspection out in the Arizona Desert. Their day starts out like any other until they come across Raul, a desperate man in a desperate situation. This forces Dalgo to come face to face with the heritage that he’s always run away from.",
+			"synopsis": "<span itemprop='character'>Dalgo</span> and <span itemprop='character'>Tristan</span> are two USA border patrol officers on a routine inspection out in the Arizona Desert. Their day starts out like any other until they come across Raul, a desperate man in a desperate situation. This forces Dalgo to come face to face with the heritage that he’s always run away from.",
 			"url": "https://borderlineshort.wix.com/info",
 			"trailer": false,
 			"festival": "Official MAD Selection"

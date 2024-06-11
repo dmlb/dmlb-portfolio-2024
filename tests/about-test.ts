@@ -31,19 +31,19 @@ test('has cv link', async ({ page }) => {
     await targetLink.click()
 
     // navigated to about
-    await expect(page.getByRole('heading', { name: 'CV / Resume' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Curriculum Vitae / Résumé' })).toBeVisible();
 });
 
 test('has download resume pdf link', async ({ page }) => {
     await page.goto(aboutPageURL);
-    const targetLink = page.getByLabel(quickInfoSection).getByRole('link', { name: 'Download Resume' });
+    const targetLink = page.getByLabel(quickInfoSection).getByRole('link', { name: 'Download Résumé' });
 
     await expect(targetLink).toBeVisible();
 });
 
 test('has linkedin link', async ({ page }) => {
     await page.goto(aboutPageURL);
-    const targetLink = page.getByLabel(quickInfoSection).getByRole('link', { name: 'linkedin' });
+    const targetLink = page.getByLabel(quickInfoSection).getByRole('link', { name: 'linked in' });
 
     await expect(targetLink).toBeVisible();
     await targetLink.click()
@@ -54,7 +54,7 @@ test('has linkedin link', async ({ page }) => {
 
 test('has codepen link', async ({ page }) => {
     await page.goto(aboutPageURL);
-    const targetLink = page.getByLabel(quickInfoSection).getByRole('link', { name: 'codepen' });
+    const targetLink = page.getByLabel(quickInfoSection).getByRole('link', { name: 'code pen' });
 
     await expect(targetLink).toBeVisible();
     await targetLink.click()
@@ -65,7 +65,7 @@ test('has codepen link', async ({ page }) => {
 
 test('has github link', async ({ page }) => {
     await page.goto(aboutPageURL);
-    const targetLink = page.getByLabel(quickInfoSection).getByRole('link', { name: 'github' });
+    const targetLink = page.getByLabel(quickInfoSection).getByRole('link', { name: 'git hub' });
     await expect(targetLink).toBeVisible();
     await targetLink.click()
 

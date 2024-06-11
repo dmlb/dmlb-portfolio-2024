@@ -42,6 +42,10 @@
 				id="search-projects"
 				bind:value={$projectStore.search}
 			/>
+			<button class="form__reset" type="reset" on:click={() => $projectStore.search = ''}>
+				✖
+				<span class="sr-only">clear search</span>
+			</button>
 		</div>
 		<fieldset class="form__radio-group">
 			<legend>Filter by Project Type</legend>
@@ -83,6 +87,14 @@
 			{/each}
 		</fieldset>
 	</Accordion>
+
+	<span role="status">
+		{$projectStore.filtered.length} projects 
+		{#if $projectStore.search || $projectStore.typeFilter}for {/if}
+		{#if $projectStore.search}search {$projectStore.search}{/if}
+		{#if $projectStore.search && $projectStore.typeFilter} and {/if}
+		{#if $projectStore.typeFilter}filter {$projectStore.typeFilter}{/if}
+	</span>
 </form>
 
 {#if $projectStore.filtered}
@@ -105,6 +117,29 @@
 
 		& details {
 			width: 100%;
+		}
+	}
+
+	.form__reset {
+		background-color: var(--btn-bg, transparent);
+		border: 2px solid var(--clr-accent);
+		color: var(--btn-clr, var(--canvas-txt));
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		height: 2.2rem;
+		width: 2.2rem;
+		font-size: var(--btn-text-size, var(--size-h6));
+		border-radius: var(--radi-s);
+		transition: all 300ms ease-in-out;
+
+		&:hover,
+		&:focus-visible {
+			transform: scale(1.05);
+			--btn-clr: var(--canvas-bg);
+			--btn-bg: hsl(var(--clr-accent-hue),
+				calc(var(--clr-accent-saturation) + 30%),
+				var(--clr-accent-lightness));
 		}
 	}
 

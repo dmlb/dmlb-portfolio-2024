@@ -15,15 +15,15 @@
 	<ul data-testid="scmp-dev-links" class="dev-links">
 		{#if !hideResume && !socialsOnly}
 			<li class="resume-link">
-				<a class="button button--large button--accent" href={resumePdfUrl}>Download Resume</a>
+				<a class="button button--large button--accent" href={resumePdfUrl}>Download Résumé</a>
 			</li>
 		{/if}
 
-		{#each profSocials as { website, link }}
+		{#each profSocials as { website, link, alt }}
 			<li>
 				<a class="button button--icon button--accent" href={link}>
 					<SocialSvg socialName={website} iconSize={32} />
-					<span class="sr-only">{website}</span>
+					<span class="sr-only">{alt}</span>
 				</a>
 			</li>
 		{/each}

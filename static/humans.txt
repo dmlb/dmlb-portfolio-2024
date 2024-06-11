@@ -3,7 +3,7 @@
   Site: https://daniellemlbastien.com
 
 /* SITE */
-  Last update: 14/05/2024
+  Last update: 11/06/2024
   Doctype: HTML5
   IDE: VS Code
 
