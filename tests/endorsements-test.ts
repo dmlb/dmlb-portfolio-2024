@@ -13,13 +13,9 @@ test('should not have any automatically detectable accessibility issues', async 
     expect(accessibilityScanResults.violations).toEqual([]);
 });
 
-test('has expected title', async ({ page }) => {
+test('has expected title, h2', async ({ page }) => {
     await page.goto(endorsementsPageURL);
     await expect(page).toHaveTitle(/Endorsements/);
-});
-
-test('has expected h2', async ({ page }) => {
-    await page.goto(endorsementsPageURL);
     await expect(page.getByRole('heading', { name: 'Endorsements' })).toBeVisible();
 });
 

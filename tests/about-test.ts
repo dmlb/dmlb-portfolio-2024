@@ -12,13 +12,9 @@ test('should not have any automatically detectable accessibility issues', async 
     expect(accessibilityScanResults.violations).toEqual([]);
 });
 
-test('has expected title', async ({ page }) => {
+test('has expected title, h2', async ({ page }) => {
     await page.goto(aboutPageURL);
     await expect(page).toHaveTitle(/About Danielle Bastien/);
-});
-
-test('has expected h2', async ({ page }) => {
-    await page.goto(aboutPageURL);
     await expect(page.getByRole('heading', { name: 'About Danielle Bastien' })).toBeVisible();
 
 });
