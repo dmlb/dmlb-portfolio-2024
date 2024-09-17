@@ -8,7 +8,11 @@ module.exports = {
 		'prettier'
 	],
 	parser: '@typescript-eslint/parser',
-	plugins: ['@typescript-eslint'],
+	plugins: [
+		'@typescript-eslint', 
+		'testing-library',
+		'jest-dom'
+	],
 	parserOptions: {
 		sourceType: 'module',
 		ecmaVersion: 2020,
