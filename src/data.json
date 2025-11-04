@@ -10,7 +10,7 @@
 			"people": "Traditional territories of the Niitsitapi (Blackfoot) and the people of Treaty 7 which includes the Siksika, the Piikani, the Kainai, the Tsuut'ina and the Îyârhe Nakoda of Bearspaw, Chiniki and Goodstoney. Which is also home to the Métis Nation, Region 3"
 		},
 		"hideResume": false,
-		"resumePdfUrl": "https://daniellemlbastien.com/DanielleBastien-Resume-2024.pdf",
+		"resumePdfUrl": "https://daniellemlbastien.com/DanielleBastien-Resume2025.pdf",
 		"startYear": 2005,
 		"professionalStartYear": 2013,
 		"charlimit": "Danielle Bastien, is a dedicated and passionate Front-End Web Developer in Calgary who is committed to delivering accessible and usable experiences to users across all devices and interfaces. Their focus is always on developing interfaces, tooling and processes that are scalable and accessible to all.",
@@ -82,6 +82,7 @@
 		"ngrx",
 		"svelte",
 		"gatsby",
+		"next-dot-js",
 		"react",
 		"jquery",
 		"handlebars-dot-js",
@@ -174,6 +175,21 @@
 		"giphy"
 	],
 	"codeSamples": [
+		{
+			"title": "Approach Controls Design System",
+			"link": "https://youtu.be/dlnU300UYTI",
+			"type": "design system",
+			"techStack": [
+				"accessibility",
+				"html",
+				"css",
+				"sass",
+				"javascript",
+				"typescript",
+				"angular",
+				"google-fonts"
+			]
+		},
 		{
 			"title": "Postmedia Design System",
 			"link": "https://youtu.be/Hw0S44-HZzw",
@@ -407,7 +423,60 @@
 	],
 	"techWork": [
 		{
-			"position": "Senior Front-End Developer, Technical Lead",
+			"position": "Senior Full-Stack Developer, Technical Lead",
+			"startYear": "2024",
+			"endYear": "Current",
+			"company": "ecobee (Generac Holdings)",
+			"url": "https://www.ecobee.com/",
+			"methodology": "Agile Development",
+			"location": "Remote",
+			"techStack": [
+				"accessibility",
+				"html",
+				"css",
+				"css-modules",
+				"javascript",
+				"typescript",
+				"contentful",
+				"gatsby",
+				"next-dot-js",
+				"react",
+				"hono",
+				"storybook",
+				"google-fonts",
+				"json",
+				"jest",
+				"testing-library",
+				"cypress",
+				"puppeteer",
+				"vitest",
+				"vite",
+				"node-dot-js",
+				"git",
+				"github",
+				"github-actions",
+				"github-copilot",
+				"circleci",
+				"nx",
+				"npm",
+				"bun",
+				"yarn",
+				"pnpm",
+				"markdown",
+				"precommit",
+				"editorconfig",
+				"eslint",
+				"prettier",
+				"sentry",
+				"visual-studio-code",
+				"figma",
+				"jira",
+				"confluence",
+				"slack"
+			]
+		},
+		{
+			"position": "Senior Full-Stack Developer, Technical Lead",
 			"startYear": "2022",
 			"endYear": "2024",
 			"company": "Approach Controls Inc.",
@@ -471,7 +540,7 @@
 			]
 		},
 		{
-			"position": "Senior Front-End Web Developer, Technical Lead",
+			"position": "Senior Full-Stack Web Developer, Technical Lead",
 			"startYear": "2019",
 			"endYear": "2022",
 			"company": "Postmedia Network Inc.",
@@ -539,7 +608,7 @@
 			"position": "Front-End Web Developer",
 			"startYear": "2015",
 			"endYear": "2019",
-			"company": "411 Local Search Corp.",
+			"company": "411 Local Search Corp. (yellowpages group)",
 			"url": "https://411.ca",
 			"methodology": "Agile Development",
 			"location": "Hybrid Remote",
@@ -855,6 +924,16 @@
 		}
 	],
 	"profDevelopment": [
+		{
+			"year": "2025",
+			"course": "AXE-CON",
+			"techStack": ["accessibility"]
+		},
+		{
+			"year": "2024",
+			"course": "Next.js 15 & React - The Complete Guide",
+			"techStack": ["next-dot-js", "react"]
+		},
 		{
 			"year": "2024",
 			"course": "Angular - The Complete Guide (2024 Edition)",
